@@ -1,19 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LogInComponent } from './auth/log-in/log-in.component'
 
 const routes: Routes = [
-  // { path: 'loggateroute', loadChildren: () => import('log-gate/log-gate.module').then(m => m.LogGateModule) }
-  {
-    path: 'loggateroute',
-    loadChildren: './log-gate/log-gate.module#LogGateModule',
-
-  }
+  { path: "logIn", component: LogInComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {
-  
-}
+export class AppRoutingModule { }

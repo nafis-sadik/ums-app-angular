@@ -1,10 +1,9 @@
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LogGateModule } from './log-gate/log-gate.module';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -13,7 +12,7 @@ import { LogGateModule } from './log-gate/log-gate.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LogGateModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
