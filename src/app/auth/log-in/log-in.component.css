@@ -1,0 +1,59 @@
+.imgSection {
+  background-image: url("./../../../assets/pexels-lisa-fotios-1957477.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.imgSection,
+.logInForm {
+  height: 100vh;
+  background-color: var(--default-bg);
+}
+.logInForm {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.form {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.form h2 {
+  margin-bottom: 50px;
+}
+
+.form input {
+  transition: 0.5s;
+  display: block;
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid var(--default-border-color);
+  border-radius: 10px;
+}
+
+.form input[type="submit"] {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  color: var(--default-bg);
+}
+.form input[type="submit"]:hover {
+  background-color: var(--default-black);
+}
+
+.imgSection::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: block;
+  background-color: black;
+  opacity: 0.3;
+}
