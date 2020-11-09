@@ -23,7 +23,7 @@
 .bg-custom {
   background-color: var(--default-black);
   z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -60,7 +60,7 @@ footer {
   text-align: center;
   color: var(--default-bg);
   background-color: var(--default-black);
-  position: absolute;
+  position: fixed;
   bottom: 0%;
   width: 100%;
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.25);
