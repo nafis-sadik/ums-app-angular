@@ -28,7 +28,7 @@
 }
 
 .form input {
-  transition: 0.5s;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: block;
   width: 100%;
   padding: 25px;
@@ -38,12 +38,12 @@
 }
 
 .form input[type="submit"] {
-  background-color: var(--secondary-color);
+  background-color: var(--default-black);
   padding: 15px;
   color: var(--default-bg);
 }
 .form input[type="submit"]:hover {
-  background-color: var(--default-black);
+  background-color: var(--secondary-color);
 }
 
 .imgSection::after {
