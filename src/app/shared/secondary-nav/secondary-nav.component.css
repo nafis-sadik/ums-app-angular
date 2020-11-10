@@ -1,0 +1,26 @@
+#SecondaryNav {
+  margin: 5vh 0;
+  margin-top: 10vh;
+}
+
+#SecondaryNav .nav-secondary {
+  padding: 15px;
+  line-height: 1.5;
+  color: var(--default-bg);
+  background-color: var(--secondary-color);
+  vertical-align: middle;
+}
+
+#SecondaryNav .nav-secondary span {
+  padding-left: 10px;
+  line-height: 2.2rem;
+}
+
+#SecondaryNav button {
+  border: 1px solid var(--default-black);
+  padding: 5px;
+  font-size: 15px;
+  float: right;
+  position: relative;
+  top: 0;
+}

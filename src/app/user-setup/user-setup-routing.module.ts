@@ -1,8 +1,11 @@
-import { UserComponent } from './user/user.component';
+import { IndexComponent } from './index/index.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [{ path: '', component: UserComponent }];
+const routes: Routes = [
+  { path: '', component: IndexComponent },
+  { path: 'ChangePassword', component: ChangePasswordComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

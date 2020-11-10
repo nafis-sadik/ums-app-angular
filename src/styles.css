@@ -8,7 +8,7 @@
 }
 
 .form-control:focus {
-  box-shadow: 0 0 0 0.2rem var(--input-hue-color);
+  box-shadow: none;
 }
 
 :host {
@@ -20,7 +20,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.bg-custom {
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+footer a {
+  color: var(--default-bg);
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+a {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: var(--default-black);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-custom {
   background-color: var(--default-black);
   z-index: 1;
   position: fixed;
@@ -28,12 +49,75 @@
   width: 100%;
 }
 
-.bg-custom a {
+.nav-custom a {
   color: var(--default-bg) !important;
 }
 
-body {
-  font-family: "Poppins", sans-serif !important;
+.top-spacing-fix {
+  content: "";
+  padding-top: 10vh;
+  display: block;
+}
+.btnEx {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: var(--default-bg);
+  background-color: var(--default-black);
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.25);
+}
+
+input {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  transition: all 0.2s ease;
+  border: 0 !important;
+  border-bottom: 0.2rem solid var(--default-border-color) !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 0 !important;
+  border-bottom: 0.2rem solid var(--secondary-color) !important;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 0;
+  background-color: var(--default-black);
+  padding: 15px;
+  color: var(--default-bg);
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.form-control {
+  border-radius: 0;
 }
 
 .shadow-style-1 {
@@ -56,31 +140,20 @@ body {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-footer {
-  text-align: center;
-  color: var(--default-bg);
-  background-color: var(--default-black);
-  position: fixed;
-  bottom: 0%;
+.custom-text-field-1 {
+  background: none;
+  border: none;
+  display: block;
+  padding: 0.25rem;
   width: 100%;
-  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.25);
 }
 
-footer a {
-  color: var(--default-bg);
+.EditOrUpdateBlock {
+  text-align: center;
 }
 
-footer a:hover {
-  color: var(--secondary-color);
-}
-
-a {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  color: var(--default-black);
-}
-
-a:hover {
-  text-decoration: none;
+.EditOrUpdateBlock a {
+  margin: 10px;
 }
 
 h1,

@@ -15,7 +15,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.form {
+.logInForm .form {
   position: relative;
   top: 50%;
   left: 50%;
@@ -25,25 +25,6 @@
 
 .form h2 {
   margin-bottom: 50px;
-}
-
-.form input {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  display: block;
-  width: 100%;
-  padding: 25px;
-  margin-bottom: 20px;
-  border: 1px solid var(--default-border-color);
-  border-radius: 10px;
-}
-
-.form input[type="submit"] {
-  background-color: var(--default-black);
-  padding: 15px;
-  color: var(--default-bg);
-}
-.form input[type="submit"]:hover {
-  background-color: var(--secondary-color);
 }
 
 .imgSection::after {

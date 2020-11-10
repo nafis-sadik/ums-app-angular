@@ -1,0 +1,12 @@
+#SearchModule button {
+  padding: 5px !important;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: 10px;
+  float: right;
+}
+
+#txtSearch {
+  display: inline-block;
+  width: 80%;
+}
