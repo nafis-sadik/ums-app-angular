@@ -1,15 +1,3 @@
-.page-item.active .page-link {
-  z-index: 0;
-  background-color: var(--default-black);
-  border: 1px solid var(--default-black);
-}
-
-.page-item.active:hover,
-.page-link:hover {
-  background-color: var(--secondary-color);
-  color: var(--default-bg);
-}
-
 #Container {
   margin-bottom: 15vh;
 }

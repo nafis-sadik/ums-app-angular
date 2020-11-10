@@ -18,7 +18,7 @@
 
 #SecondaryNav button {
   border: 1px solid var(--default-black);
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 15px;
   float: right;
   position: relative;

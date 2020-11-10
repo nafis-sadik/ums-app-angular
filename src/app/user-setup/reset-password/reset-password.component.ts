@@ -6,8 +6,181 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reset-password.component.css']
 })
 export class ResetPasswordComponent implements OnInit {
+  PageName: string;
+  Users: any[] = [
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    },
+    {
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
+    }
+  ];
 
-  constructor() { }
+  constructor() {
+    this.PageName = "Reset Password";
+  }
 
   ngOnInit(): void {
   }

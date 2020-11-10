@@ -7,174 +7,174 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
   PageName: string;
-  Users: [
+  Users: any[] = [
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     },
     {
-      UserId: 'vvipsection';
-      Name: 'শাখা প্রধান-ভিভিআইপি';
-      email: 'vvip@info.com';
-      contact: '2455';
-      status: 'Authorized';
-      Id: 1;
+      UserId: 'vvipsection',
+      Name: 'শাখা প্রধান-ভিভিআইপি',
+      email: 'vvip@info.com',
+      Contact: '2455',
+      status: 'Authorized',
+      Id: 1,
     }
   ];
   constructor() {

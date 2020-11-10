@@ -11,18 +11,18 @@
             <th scope="col">Email</th>
             <th scope="col">Contact</th>
             <th scope="col">Status</th>
-            <th scope="col">Edit / Details  </th>
+            <th class="EditOrUpdateBlock" scope="col">Edit / Details</th>
             <th scope="col">Decline</th>
             </tr>
         </thead>
         <tbody>
           <tr *ngFor="let user of Users; let i = index">
               <th scope="row">{{ i+1 }}</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>Mark</td>
-              <td>Otto</td>
+              <td>{{ user.UserId }}</td>
+              <td>{{ user.Name }}</td>
+              <td>{{ user.Email }}</td>
+              <td>{{ user.Contact }}</td>
+              <td>{{ user.Status }}</td>
               <td class="EditOrUpdateBlock">
                   <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                   <a href="#"><i class="fa fa-sticky-note" aria-hidden="true"></i></a>
