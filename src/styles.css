@@ -5,6 +5,7 @@
   --default-black: rgb(59, 59, 59);
   --secondary-color: #6675df;
   --input-hue-color: #0000002c;
+  --default-transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .form-control:focus {
@@ -33,7 +34,7 @@ footer a:hover {
 }
 
 a {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: var(--default-transition);
   color: var(--default-black);
 }
 
@@ -47,6 +48,8 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .nav-custom a {
@@ -78,7 +81,7 @@ footer {
 }
 
 input {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: var(--default-transition);
   display: block;
   width: 100%;
   padding: 6px 12px;
@@ -88,7 +91,7 @@ input {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  transition: all 0.2s ease;
+  transition: var(--default-transition);
   border: 0 !important;
   border-bottom: 0.2rem solid var(--default-border-color) !important;
 }
@@ -103,7 +106,7 @@ input[type="password"]:focus {
 input[type="submit"],
 input[type="button"],
 button {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: var(--default-transition);
   border: 0;
   background-color: var(--default-black);
   padding: 15px;
@@ -193,10 +196,7 @@ h6 {
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
-  -webkit-transition: margin 0.25s ease-out;
-  -moz-transition: margin 0.25s ease-out;
-  -o-transition: margin 0.25s ease-out;
-  transition: margin 0.25s ease-out;
+  transition: var(--default-transition);
   overflow: auto;
   position: fixed;
 }
@@ -211,7 +211,14 @@ h6 {
 }
 
 #page-content-wrapper {
+  transition: var(--default-transition);
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   min-width: 100vw;
+}
+
+#page-content-wrapper.toggled {
+  margin-left: 15rem;
 }
 
 #wrapper.toggled #sidebar-wrapper {
