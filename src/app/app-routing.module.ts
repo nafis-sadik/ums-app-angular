@@ -1,4 +1,3 @@
-import { NangtaModule } from './nangta/nangta.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -16,14 +15,9 @@ const routes: Routes = [
   {
     path: 'Home',
     loadChildren: () =>
-      import('../app/dashboard3/dashboard3-routing.module').then(
-        (m) => m.Dashboard3RoutingModule
+      import('../app/dashboard/dashboard-routing.module').then(
+        (m) => m.DashboardRoutingModule
       ),
-  },
-  {
-    path: 'loBada',
-    loadChildren: () =>
-      import('../app/nangta/nangta.module').then((m) => m.NangtaModule),
   },
   { path: '', component: LogInComponent },
   { path: '**', component: NotFoundComponent },

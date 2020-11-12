@@ -1,0 +1,13 @@
+.sidenav-second-level {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav-second-level li {
+  transition: var(--default-transition);
+  border-left: 15px solid var(--default-black);
+}
+
+.sidenav-second-level li:hover {
+  border-left: 15px solid var(--secondary-color);
+}

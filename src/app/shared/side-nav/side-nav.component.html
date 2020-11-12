@@ -2,13 +2,77 @@
   <div class="sidebar-heading">
       <img src="#" alt="Profile Picture" id="ProfilePicture">
   </div>
-  <div class="list-group list-group-flush">
-      <a href="#" class="list-group-item list-group-item-action bg-light">Configuration</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">Role Setup</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">User Setup</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">Session</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">Authorization</a>
+  <!-- <div class="list-group list-group-flush">
       <a href="#" class="list-group-item list-group-item-action bg-light">report</a>
       <a href="#" class="list-group-item list-group-item-action bg-light">Log Out</a>
+  </div> -->
+  <div class="list-group list-group-flush">
+    <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <a class="list-group-item list-group-item-action bg-light collapsed" data-toggle="collapse" href="#Configuration" data-parent="#exampleAccordion">
+          <span class="nav-link-text">Configuration</span>
+        </a>
+        <ul class="sidenav-second-level collapse" id="Configuration">
+          <li><a class="list-group-item list-group-item-action" routerLink="#">Report Parameter</a></li>
+          <li><a class="list-group-item list-group-item-action" routerLink="#">Password Policy</a></li>
+        </ul>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+        <a class="list-group-item list-group-item-action bg-light collapsed" data-toggle="collapse" href="#RoleSetup" data-parent="#exampleAccordion">
+          <span class="nav-link-text">Role Setup</span>
+        </a>
+        <ul class="sidenav-second-level collapse" id="RoleSetup">
+          <li><a class="list-group-item list-group-item-action" routerLink="#">Role</a></li>
+          <li><a class="list-group-item list-group-item-action" routerLink="#">Assign Feature</a></li>
+        </ul>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <a class="list-group-item list-group-item-action bg-light collapsed" data-toggle="collapse" href="#UserSetup" data-parent="#exampleAccordion">
+          <span class="nav-link-text">User Setup</span>
+        </a>
+        <ul class="sidenav-second-level collapse" id="UserSetup">
+          <li><a class="list-group-item list-group-item-action" routerLink="#">User</a></li>
+          <li><a class="list-group-item list-group-item-action" routerLink="#">Change Password</a></li>
+          <li><a class="list-group-item list-group-item-action" routerLink="#">Reset Password</a></li>
+          <li><a class="list-group-item list-group-item-action" routerLink="#">Assign Role</a></li>
+        </ul>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+        <a class="list-group-item list-group-item-action bg-light collapsed" data-toggle="collapse" href="#Session" data-parent="#exampleAccordion">
+          <span class="nav-link-text">Session</span>
+        </a>
+        <ul class="sidenav-second-level collapse" id="Session">
+          <li>
+            <a class="list-group-item list-group-item-action" routerLink="#">Active Sessions</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+        <a class="list-group-item list-group-item-action bg-light collapsed" data-toggle="collapse" href="#Authorization" data-parent="#exampleAccordion">
+          <span class="nav-link-text">Authorization</span>
+        </a>
+        <ul class="sidenav-second-level collapse" id="Authorization">
+          <li>
+            <a class="list-group-item list-group-item-action" routerLink="login.html">Approve Request</a>
+          </li>
+          <li>
+            <a class="list-group-item list-group-item-action" routerLink="register.html">Cancel Request</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+        <a class="list-group-item list-group-item-action bg-light collapsed" data-toggle="collapse" href="#Report" data-parent="#exampleAccordion">
+          <span class="nav-link-text">Report</span>
+        </a>
+        <ul class="sidenav-second-level collapse" id="Report">
+          <li>
+            <a class="list-group-item list-group-item-action" routerLink="#">User Information</a>
+          </li>
+          <li>
+            <a class="list-group-item list-group-item-action" routerLink="#">Audit Log</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </div>
