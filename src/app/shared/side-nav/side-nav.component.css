@@ -8,6 +8,6 @@
 }
 
 .sidenav-second-level li a:hover {
-  border-left: 15px solid var(--secondary-color);
+  border-left: 10px solid var(--secondary-color);
   background-color: var(--input-hue-color);
 }
