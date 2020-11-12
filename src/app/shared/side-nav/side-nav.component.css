@@ -5,9 +5,9 @@
 
 .sidenav-second-level li {
   transition: var(--default-transition);
-  border-left: 15px solid var(--default-black);
 }
 
-.sidenav-second-level li:hover {
+.sidenav-second-level li a:hover {
   border-left: 15px solid var(--secondary-color);
+  background-color: var(--input-hue-color);
 }
