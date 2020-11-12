@@ -11,3 +11,34 @@
   border-left: 10px solid var(--secondary-color);
   background-color: var(--input-hue-color);
 }
+
+.logout {
+  margin-top: auto;
+  position: relative;
+  bottom: 0%;
+}
+
+.logout:hover {
+  background-color: red;
+  color: var(--default-bg);
+}
+
+#UserName {
+  margin: 10px 0;
+  display: block;
+  text-align: center;
+}
+
+#Email {
+  font-size: 0.75rem;
+  display: block;
+  text-align: center;
+}
+
+#ProfilePicture {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
