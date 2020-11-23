@@ -194,11 +194,12 @@ h6 {
 }
 
 #sidebar-wrapper {
-  min-height: 100vh;
+  height: 100%;
   margin-left: -15rem;
   transition: var(--default-transition);
-  overflow: auto;
   position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #sidebar-wrapper .sidebar-heading {

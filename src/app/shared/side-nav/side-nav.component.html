@@ -1,11 +1,9 @@
 <div class="bg-light border-right shadow-style-4" id="sidebar-wrapper">
   <div class="sidebar-heading">
-      <img src="#" alt="Profile Picture" id="ProfilePicture">
+    <img src="../../../assets/images/default_image.png" class="rounded-circle" id="ProfilePicture">
+      <span id="UserName">User Name</span>
+      <span id="Email">email@vendor.com</span>
   </div>
-  <!-- <div class="list-group list-group-flush">
-      <a href="#" class="list-group-item list-group-item-action bg-light">report</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">Log Out</a>
-  </div> -->
   <div class="list-group list-group-flush">
     <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
@@ -72,6 +70,9 @@
             <a class="list-group-item list-group-item-action" routerLink="#">Audit Log</a>
           </li>
         </ul>
+      </li>
+      <li class="nav-item">
+        <button href="#" class="list-group-item list-group-item-action logout">Log Out</button>
       </li>
     </ul>
   </div>
