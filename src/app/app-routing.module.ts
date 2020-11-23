@@ -1,7 +1,6 @@
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LogInComponent } from './auth/log-in/log-in.component';
 
 // Lazy loading
 const routes: Routes = [
@@ -12,14 +11,19 @@ const routes: Routes = [
         (m) => m.UserSetupModule
       ),
   },
+  // {
+  //   path: 'Home',
+  //   loadChildren: () =>
+  //     import('../app/dashboard/dashboard.module').then(
+  //       (m) => m.DashboardModule
+  //     ),
+  // },
   {
-    path: 'Home',
+    path: 'auth',
     loadChildren: () =>
-      import('../app/dashboard/dashboard-routing.module').then(
-        (m) => m.DashboardRoutingModule
-      ),
+      import('../app/auth/auth.module').then((m) => m.AuthModule),
   },
-  { path: '', component: LogInComponent },
+  // { path: '', component: LogInComponent },
   { path: '**', component: NotFoundComponent },
 ];
 
