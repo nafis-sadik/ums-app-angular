@@ -24,10 +24,8 @@ export class LogInComponent implements OnInit {
     });
   }
   login(value): void {
-    console.log(value);
-
-    this.authServiceService
-      .login(value)
-      .subscribe((data) => console.log(data, 'dataresponse'));
+    this.authServiceService.login(value).subscribe((data) => {
+      console.log('Dataresponse', data);
+    });
   }
 }

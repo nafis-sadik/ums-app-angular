@@ -15,7 +15,8 @@ export class AuthServiceService {
       )
       .pipe(
         map((response) => {
-          console.log(response.statusText);
+          console.log(response);
+          return response;
         }),
         catchError((error) => of(error))
       );
