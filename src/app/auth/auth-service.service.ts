@@ -18,7 +18,7 @@ export class AuthServiceService {
           console.log(response);
           return response;
         }),
-        catchError((error) => of(error))
+        catchError((error) => of("Not found"))
       );
   }
 }
