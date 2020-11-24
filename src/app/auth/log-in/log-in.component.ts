@@ -19,13 +19,14 @@ export class LogInComponent implements OnInit {
 
   ngOnInit(): void {
     this.LoginForm = this.fb.group({
-      userId: ['', Validators.required],
-      pass: ['', Validators.required],
+      UserId: ['', Validators.required],
+      Pass: ['', Validators.required],
     });
   }
   login(value): void {
     this.authServiceService.login(value).subscribe((data) => {
-      console.log('Dataresponse', data);
+      localStorage.setItem('UserId', value.UserId);
+      localStorage.setItem('Token', data);
     });
   }
 }

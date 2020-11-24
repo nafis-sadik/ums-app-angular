@@ -1,15 +1,28 @@
 <div id="LogInPageContainer" class="container-fluid">
-    <div class="row">
-        <div class="col-md-9 imgSection"></div>
-        <div class="col-md-3 logInForm">
-            <div class="form">
-                <h2>Login to continuess</h2>
-                <form [formGroup]="LoginForm" (ngSubmit)="login(LoginForm.value)">
-                  <input type="text" name="UserId" class="form-control" formControlName="userId"  placeholder="User Id">
-                  <input type="password" name="Pass" class="form-control" formControlName="pass" id="Password" placeholder="Password">
-                  <input type="submit" id="LogIn" value="LOG IN">
-                </form>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col-md-9 imgSection"></div>
+    <div class="col-md-3 logInForm">
+      <div class="form">
+        <h2>Login to continuess</h2>
+        <form [formGroup]="LoginForm" (ngSubmit)="login(LoginForm.value)">
+          <input
+            type="text"
+            name="UserId"
+            class="form-control"
+            formControlName="UserId"
+            placeholder="User Id"
+          />
+          <input
+            type="password"
+            name="Pass"
+            class="form-control"
+            formControlName="Pass"
+            id="Password"
+            placeholder="Password"
+          />
+          <input type="submit" id="LogIn" value="LOG IN" />
+        </form>
+      </div>
     </div>
+  </div>
 </div>
