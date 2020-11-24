@@ -10,12 +10,11 @@ export class AuthServiceService {
   login(value: any): Observable<any> {
     return this.http
       .post<any>(
-        `https://localhost:44337/api/Login/Login/${value.userId}/${value.pass}`,
+        `https://localhost:44337/api/Login/Login/${value.UserId}/${value.Pass}`,
         null
       )
       .pipe(
         map((response) => {
-          console.log(response);
           return response;
         }),
         catchError((error) => of("Not found"))
