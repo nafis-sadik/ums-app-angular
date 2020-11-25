@@ -17,7 +17,7 @@ export class AuthServiceService {
         map((response) => {
           return response;
         }),
-        catchError((error) => of("Not found"))
+        catchError((error) => of(error))
       );
   }
 }

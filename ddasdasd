@@ -1,0 +1,140 @@
+[33mcommit a3acff6d3c94148abf5fecbe3d3c62beac59c3bc[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m)[m
+Merge: e1be51b 754729a
+Author: Rashedul Islam Sadar <59619110+Sadar1710@users.noreply.github.com>
+Date:   Wed Nov 25 10:21:05 2020 +0600
+
+    Merge branch 'dev' of https://github.com/nafis-sadik/ums-app-angular into dev
+
+[33mcommit 754729a20e9e69476db044c1c6d357818470297a[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Wed Nov 25 10:15:45 2020 +0600
+
+    Sending object to .net core
+
+[33mcommit e1be51b0d2f4408fe0cc99be2802979366d1ad9b[m
+Merge: 2d9338f 8884b7d
+Author: Rashedul Islam Sadar <59619110+Sadar1710@users.noreply.github.com>
+Date:   Tue Nov 24 18:36:26 2020 +0600
+
+    sdf
+
+[33mcommit 8884b7dcb8475b4a4a95b8edd836df0d5f8e66a7[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Tue Nov 24 18:30:05 2020 +0600
+
+    Working on service
+
+[33mcommit 2d9338f2468497fc8b1c455d28a3f6820226a676[m
+Author: Rashedul Islam Sadar <59619110+Sadar1710@users.noreply.github.com>
+Date:   Tue Nov 24 18:25:36 2020 +0600
+
+    sdfsdf
+
+[33mcommit 5bbe3e5cb1589509f7506b7b8cd284cee63aeaea[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Tue Nov 24 11:30:04 2020 +0600
+
+    Success
+
+[33mcommit dac78c0e2b5159454cdc00e77a98c994637207c7[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Mon Nov 23 16:17:49 2020 +0600
+
+    Http request successful
+
+[33mcommit 9b3353b48b84eb564692713a832f767ff2d553e1[m
+Author: Rashedul Islam Sadar <59619110+Sadar1710@users.noreply.github.com>
+Date:   Thu Nov 12 13:11:10 2020 +0600
+
+    User info in navigation
+
+[33mcommit 2b899f78a7fc401d07c2c76a2a09ab71ff2e228a[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Thu Nov 12 11:14:03 2020 +0600
+
+    Side style update
+
+[33mcommit 2a9fd298a577db57fabab3bb3820e23a41203a5a[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Thu Nov 12 11:06:02 2020 +0600
+
+    side nav bar updated
+
+[33mcommit b94e0216d36a068edc617fb3678f398be4b2170a[m
+Author: Rashedul Islam Sadar <59619110+Sadar1710@users.noreply.github.com>
+Date:   Thu Nov 12 10:55:55 2020 +0600
+
+    side menu navigation
+
+[33mcommit d07545600622b207ab8b27e7ab4cbf682688e45d[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Thu Nov 12 09:47:32 2020 +0600
+
+    Side Menu href replaced with router link
+
+[33mcommit b5e755b4ca3c51630b3c0c714809b46d20344c84[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Wed Nov 11 15:12:37 2020 +0600
+
+    Success
+
+[33mcommit 3d57a620e184bf62ac9f9b7fb92291818624df04[m
+Author: Nafis Sadik <nafis_sadik@outlook.com>
+Date:   Tue Nov 10 23:49:49 2020 +0600
+
+    side bar added
+
+[33mcommit e7aa0a4dcf5fa9478d04827b6915583b3731095d[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Tue Nov 10 14:42:03 2020 +0600
+
+    Structured
+
+[33mcommit fbb68da295ec85785651f8aa1842015a3393810a[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Mon Nov 9 15:32:16 2020 +0600
+
+    Log In form & 404
+
+[33mcommit 908992680295dea554e7b4e0a5fdc4d937e18c00[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Mon Nov 9 13:30:27 2020 +0600
+
+    Log In and 404 developed
+
+[33mcommit d7f527c57066f7125e02c94ae5c1c59754cf9614[m
+Merge: a0d7f09 3e43958
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Mon Nov 9 08:00:46 2020 +0600
+
+    merge conflict
+
+[33mcommit a0d7f0952ef8d34afe93607e3d7a05d26da0ff5e[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Mon Nov 9 07:54:38 2020 +0600
+
+    Editor config added to repo
+
+[33mcommit 3e43958184eb14573e338d574e1f41f6b7c443ad[m
+Author: Nafis Sadik <nafis_sadik@outlook.com>
+Date:   Mon Nov 9 00:00:44 2020 +0600
+
+    Log In page designed
+
+[33mcommit a98cc634fb7ae6e702d964bc33948048c668adf6[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Thu Nov 5 13:44:56 2020 +0600
+
+    Gitignore added
+
+[33mcommit 0992a064471d6191750bb40d932083495a6a0d14[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Thu Nov 5 13:43:23 2020 +0600
+
+    Project Initialized
+
+[33mcommit a223e5da72169a1cf975b77cf8d3d7eda4733731[m
+Author: Mahmud <mmnabi.cse@gmail.com>
+Date:   Thu Nov 5 10:04:14 2020 +0600
+
+    first commit
