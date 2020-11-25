@@ -185,6 +185,8 @@ export class IndexComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('success');
-    this.userSetupServiceService.getUsers();
+    this.userSetupServiceService.getUsers().subscribe((result) => {
+      console.log(result);
+    });
   }
 }
