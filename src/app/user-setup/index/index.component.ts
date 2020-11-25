@@ -8,7 +8,6 @@ import { UserSetupServiceService } from '../user-setup-service.service';
 })
 export class IndexComponent implements OnInit {
   PageName: string;
-  private userSetupServiceService: UserSetupServiceService;
   Users: any[] = [
     {
       UserId: 'vvipsection',
@@ -179,7 +178,7 @@ export class IndexComponent implements OnInit {
       Id: 1,
     },
   ];
-  constructor() {
+  constructor(private userSetupServiceService: UserSetupServiceService) {
     this.PageName = 'User List';
   }
 
