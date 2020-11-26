@@ -13,9 +13,12 @@ export class LogInComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private authServiceService: AuthServiceService
-  ) {}
+  ) {
+    this.PageName = 'LogIn';
+  }
 
   userIdvalue: string;
+  PageName: string;
 
   ngOnInit(): void {
     this.LoginForm = this.fb.group({
