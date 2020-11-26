@@ -5,6 +5,7 @@ import { UserSetupRoutingModule } from './user-setup-routing.module';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { IndexComponent } from './index/index.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     ChangePasswordComponent,
     IndexComponent,
     ResetPasswordComponent,
+    UpdateUserComponent,
   ],
   imports: [CommonModule, UserSetupRoutingModule, SharedModule],
 })

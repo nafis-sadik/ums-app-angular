@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -7,7 +8,7 @@ import { AuthServiceService } from './auth-service.service';
 
 @NgModule({
   declarations: [LogInComponent],
-  imports: [CommonModule, ReactiveFormsModule, AuthRoutingModule],
+  imports: [CommonModule, ReactiveFormsModule, AuthRoutingModule, SharedModule],
   exports: [LogInComponent],
   providers: [AuthServiceService],
 })
