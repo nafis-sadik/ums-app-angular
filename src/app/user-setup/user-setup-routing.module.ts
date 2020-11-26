@@ -9,6 +9,11 @@ const routes: Routes = [
   { path: 'ChangePassword', component: ChangePasswordComponent },
   { path: 'ResetPassword', component: ResetPasswordComponent },
   { path: 'UpdateUser', component: UpdateUserComponent },
+  {
+    path: 'UpdateUser',
+    component: UpdateUserComponent,
+    data: { id: 'UserId' },
+  },
 ];
 
 @NgModule({
