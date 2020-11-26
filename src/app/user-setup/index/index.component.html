@@ -22,7 +22,7 @@
         <td>{{ user.Email }}</td>
         <td>{{ user.Contact }}</td>
         <td class="EditOrUpdateBlock">
-          <a routerLink="/User/UpdateUser/"
+          <a routerLink="/User/UpdateUser/{{ user.UserId }}"
             ><i class="fa fa-pencil-square-o" aria-hidden="true"></i
           ></a>
           <a href="#"><i class="fa fa-sticky-note" aria-hidden="true"></i></a>
