@@ -27,7 +27,7 @@ export class UserSetupServiceService {
         catchError((err) => of(err))
       );
   }
-
+  
   ChangePass(OldPass: String, NewPass: string): Observable<any> {
     let UserId = localStorage.getItem('UserId');
     return this.http
