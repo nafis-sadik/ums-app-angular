@@ -5,3 +5,7 @@
 .table .thead-dark th {
   background-color: var(--default-black);
 }
+
+.page-link:hover {
+  cursor: pointer;
+}

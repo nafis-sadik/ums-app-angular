@@ -10,171 +10,83 @@ export class IndexComponent implements OnInit {
   PageName: string;
   Users: any[] = [
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
     {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
-      Id: 1,
-    },
-    {
-      UserId: 'vvipsection',
-      Name: 'শাখা প্রধান-ভিভিআইপি',
-      email: 'vvip@info.com',
-      Contact: '2455',
-      status: 'Authorized',
+      userId: '',
+      Name: '',
+      email: '',
+      Contact: '',
+      status: '',
       Id: 1,
     },
   ];
@@ -183,9 +95,28 @@ export class IndexComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('success');
-    this.userSetupServiceService.getUsers().subscribe((result) => {
-      console.log(result);
+    this.userSetupServiceService.getUsers(1).subscribe((result) => {
+      for (let i = 0; i < this.Users.length; i++) {
+        this.Users[i].UserId = result[i].userId;
+        this.Users[i].Name = result[i].name;
+        this.Users[i].Email = result[i].email;
+        this.Users[i].Contact = result[i].cellno;
+        this.Users[i].status = result[i].status;
+        this.Users[i].Id = i;
+      }
+    });
+  }
+
+  LoadData(PageNumber: Number): void {
+    this.userSetupServiceService.getUsers(PageNumber).subscribe((result) => {
+      for (let i = 0; i < this.Users.length; i++) {
+        this.Users[i].UserId = result[i].userId;
+        this.Users[i].Name = result[i].name;
+        this.Users[i].Email = result[i].email;
+        this.Users[i].Contact = result[i].cellno;
+        this.Users[i].status = result[i].status;
+        this.Users[i].Id = i;
+      }
     });
   }
 }
