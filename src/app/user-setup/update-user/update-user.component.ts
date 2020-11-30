@@ -1,6 +1,9 @@
+import { User } from './../../shared/models/models.component';
 import { UserSetupServiceService } from './../user-setup-service.service';
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ignoreElements } from 'rxjs/operators';
 
 @Component({
   selector: 'app-update-user',
@@ -9,16 +12,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateUserComponent implements OnInit {
   PageName: string;
-  constructor(private userSetupServiceService: UserSetupServiceService) {
+  public UserId: string;
+  public UserInfo: User = new User();
+  constructor(
+    private userSetupServiceService: UserSetupServiceService,
+    private route: ActivatedRoute
+  ) {
     this.PageName = 'User Data Update';
   }
 
   ngOnInit(): void {
-    let data = this.userSetupServiceService
-      .getUser(localStorage.getItem('UserId'))
-      .subscribe((res) => {
-        console.log(res);
-      });
+    this.route.params.subscribe((params) => {
+      this.UserId = params['UserId'];
+    });
+
+    if (this.UserId != null) {
+      let data = this.userSetupServiceService
+        .getUser(this.UserId)
+        .subscribe((res) => {
+          console.log('data');
+          this.UserInfo.Name = res.name;
+          this.UserInfo.UserId = res.userId;
+          this.UserInfo.Cellno = res.cellno;
+          this.UserInfo.Email = res.email;
+          this.UserInfo.Dob = res.dob;
+          console.log(res);
+        });
+    }
   }
 
   UpdateUserData(): void {}

@@ -1,9 +1,8 @@
+import { User } from './../shared/models/models.component';
 import { map, catchError } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { of, Observable } from 'rxjs';
-import { strict } from 'assert';
-import { error } from 'protractor';
 
 @Injectable({
   providedIn: 'root',
@@ -46,6 +45,19 @@ export class UserSetupServiceService {
   getUser(UserId: string): Observable<any> {
     return this.http
       .get(`https://localhost:44337/api/Users/Get/${UserId}`, {
+        headers: this.Headaer,
+      })
+      .pipe(
+        map((response) => {
+          return response;
+        }),
+        catchError((error) => of(error))
+      );
+  }
+
+  UpdateUserData(UserInfo: User): Observable<any> {
+    return this.http
+      .post(`https://localhost:44337/api/Users/Update/${UserInfo}`, {
         headers: this.Headaer,
       })
       .pipe(
