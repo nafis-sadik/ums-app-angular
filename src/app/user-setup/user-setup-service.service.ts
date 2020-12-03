@@ -50,9 +50,12 @@ export class UserSetupServiceService {
       })
       .pipe(
         map((response) => {
+          console.log(response);
           return response;
         }),
-        catchError((error) => of(error))
+        catchError((error) => of(
+          console.log("error")
+        ))
       );
   }
 addNewUser(addUser): Observable<any>{

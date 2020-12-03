@@ -22,6 +22,10 @@ export class AddUserComponent implements OnInit {
       Cellno: ['', Validators.required],
       Email: ['', Validators.required],
       Dob: ['', Validators.required],
+      CategoryId: ['', Validators.required],
+      Catidval: ['', Validators.required],
+      Mfa: ['', Validators.required],
+      Recstatus: ['', Validators.required],
     });
   }
   AddNewUser(value):void{
