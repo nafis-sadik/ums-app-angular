@@ -1,0 +1,52 @@
+<div class="container">
+  <app-secondary-nav [PageHeading]="PageName"></app-secondary-nav>
+  <form [formGroup]="AddUser" (ngSubmit)="AddNewUser(AddUser.value)">
+    <label for="Name">UserId</label>
+    <input
+      type="text"
+      class="form-control"
+      id="UserId"
+      name="UserId"
+      formControlName="UserId"
+      placeholder="User Id..."
+    />
+    <label for="Name">User Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="Name"
+      name="Name"
+      formControlName="Name"
+      placeholder="Name..."
+    />
+    <label for="Cellno">Contact Number</label>
+    <input
+      type="text"
+      class="form-control"
+      id="Cellno"
+      name="Cellno"
+      formControlName="Cellno"
+      placeholder="ContactNumber..."
+    />
+    <label for="Email">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="Email"
+      name="Email"
+      formControlName="Email"
+      placeholder="Email..."
+    />
+    <label for="Dob">Date of Birth</label>
+    <input
+      type="date"
+      class="form-control"
+      id="Dob"
+      name="Dob"
+      formControlName="Dob"
+    />
+    <button type="submit" class="btn btn-primary">
+      Add New User
+    </button>
+  </form>
+</div>

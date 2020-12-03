@@ -6,6 +6,9 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { IndexComponent } from './index/index.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddUserComponent } from './add-user/add-user.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,9 @@ import { UpdateUserComponent } from './update-user/update-user.component';
     IndexComponent,
     ResetPasswordComponent,
     UpdateUserComponent,
+    AddUserComponent,
+    UserDetailsComponent,
   ],
-  imports: [CommonModule, UserSetupRoutingModule, SharedModule],
+  imports: [CommonModule, UserSetupRoutingModule, SharedModule,FormsModule,ReactiveFormsModule],
 })
 export class UserSetupModule {}

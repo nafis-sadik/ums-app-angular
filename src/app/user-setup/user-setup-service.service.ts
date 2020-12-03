@@ -3,7 +3,7 @@ import { map, catchError } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { of, Observable } from 'rxjs';
-
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root',
 })
@@ -12,7 +12,8 @@ export class UserSetupServiceService {
     UserId: localStorage.getItem('UserId'),
     Token: localStorage.getItem('Token'),
   });
-  constructor(private http: HttpClient) {}
+
+  constructor(private http: HttpClient,private route: Router) {}
 
   getUsers(PageNumber: Number): Observable<any> {
     return this.http
@@ -26,7 +27,7 @@ export class UserSetupServiceService {
         catchError((err) => of(err))
       );
   }
-  
+
   ChangePass(OldPass: String, NewPass: string): Observable<any> {
     let UserId = localStorage.getItem('UserId');
     return this.http
@@ -54,17 +55,37 @@ export class UserSetupServiceService {
         catchError((error) => of(error))
       );
   }
-
-  UpdateUserData(UserInfo: User): Observable<any> {
+addNewUser(addUser): Observable<any>{
+    console.log(addUser);
     return this.http
-      .post(`https://localhost:44337/api/Users/Update/${UserInfo}`, {
+    .post(`https://localhost:44337/api/Users/Add`,addUser, {
+      headers: this.Headaer,
+    })
+    .pipe(
+      map((response) => {
+        console.log("success");
+        console.log(response);
+        return response;
+      }),
+      catchError((error) =>
+      of(console.log("error")))
+    );
+}
+  UpdateUserData(UserInfo): Observable<any> {
+   console.log(UserInfo);
+    return this.http
+      .post(`https://localhost:44337/api/Users/Update`,UserInfo, {
         headers: this.Headaer,
       })
       .pipe(
         map((response) => {
+          console.log("success");
+          console.log(response);
+          this.route.navigate(['/User']);
           return response;
         }),
-        catchError((error) => of(error))
+        catchError((error) =>
+        of(console.log("error")))
       );
   }
 }

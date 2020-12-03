@@ -4,12 +4,17 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+
 const routes: Routes = [
   { path: '', component: IndexComponent },
   { path: 'ChangePassword', component: ChangePasswordComponent },
   { path: 'ResetPassword', component: ResetPasswordComponent },
   { path: 'UpdateUser', component: UpdateUserComponent },
   { path: 'UpdateUser/:UserId', component: UpdateUserComponent },
+  { path: 'AddNewUser', component: AddUserComponent },
+  { path: 'UserDetails/:UserId', component: UserDetailsComponent },
 ];
 
 @NgModule({

@@ -4,6 +4,8 @@ import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ignoreElements } from 'rxjs/operators';
+import { NgForm } from '@angular/forms';
+import { observable } from 'rxjs';
 
 @Component({
   selector: 'app-update-user',
@@ -20,7 +22,7 @@ export class UpdateUserComponent implements OnInit {
   ) {
     this.PageName = 'User Data Update';
   }
-
+  
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       this.UserId = params['UserId'];
@@ -41,5 +43,8 @@ export class UpdateUserComponent implements OnInit {
     }
   }
 
-  UpdateUserData(): void {}
+  UpdateUserData(): void {
+    this.userSetupServiceService.UpdateUserData(this.UserInfo).subscribe((data) => {
+    });;
+  }
 }

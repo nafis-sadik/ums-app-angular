@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { TokenInterceptorService } from './user-setup/token-interceptor.service';
+
+
 
 @NgModule({
   declarations: [AppComponent, NotFoundComponent],
@@ -16,12 +17,9 @@ import { TokenInterceptorService } from './user-setup/token-interceptor.service'
     SharedModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule,
   ],
-  providers: [{
-    provide:HTTP_INTERCEPTORS,
-    useClass:TokenInterceptorService,
-    multi:true
-  }],
+  providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

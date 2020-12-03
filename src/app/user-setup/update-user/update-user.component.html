@@ -1,16 +1,27 @@
 <div class="container">
   <app-secondary-nav [PageHeading]="PageName"></app-secondary-nav>
-  <form>
+  <form #updateUser='ngForm' (ngSubmit)="UpdateUserData()">
     <label for="ContactNumber" class="userId"
       >UserId : {{ UserInfo.UserId }}</label
     >
     <br />
     <label for="Name">User Name</label>
     <input
+      type="hidden"
+      class="form-control"
+      id="UserId"
+      name="UserId"
+      required
+      [(ngModel)]="UserInfo.UserId"
+      value="{{ UserInfo.UserId }}"
+    />
+    <input
       type="text"
       class="form-control"
       id="Name"
       name="Name"
+      required
+      [(ngModel)]="UserInfo.Name"
       value="{{ UserInfo.Name }}"
     />
     <label for="ContactNumber">Contact Number</label>
@@ -19,6 +30,8 @@
       class="form-control"
       id="ContactNumber"
       name="ContactNumber"
+      required
+      [(ngModel)]="UserInfo.Cellno"
       value="{{ UserInfo.Cellno }}"
     />
     <label for="ContactNumber">Email</label>
@@ -27,6 +40,8 @@
       class="form-control"
       id="Email"
       name="Email"
+      required
+      [(ngModel)]="UserInfo.Email"
       value="{{ UserInfo.Email }}"
     />
     <label for="ContactNumber">Date of Birth</label>
@@ -35,10 +50,12 @@
       class="form-control"
       id="DOB"
       name="DOB"
+      required
+      [(ngModel)]="UserInfo.Dob"
       value="{{ UserInfo.Dob }}"
     />
 
-    <button type="button" id="Email" (click)="UpdateUserData()">
+    <button type="submit" class="btn btn-primary">
       Update User Data
     </button>
   </form>
