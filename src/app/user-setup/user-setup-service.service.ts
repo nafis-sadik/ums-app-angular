@@ -91,4 +91,18 @@ addNewUser(addUser): Observable<any>{
         of(console.log("error")))
       );
   }
+  ResetPassword(UserId): Observable<any> {
+     return this.http
+       .post(`https://localhost:44337/api/Users/ResetPassword/UserId`, {
+         headers: this.Headaer,
+       })
+       .pipe(
+         map((response) => {
+           console.log("success");
+           return response;
+         }),
+         catchError((error) =>
+         of(console.log("error")))
+       );
+   }
 }

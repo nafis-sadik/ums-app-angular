@@ -120,4 +120,9 @@ export class ResetPasswordComponent implements OnInit {
       }
     });
   }
+  ResetPassword(UserId){
+    console.log(UserId);
+    this.userSetupServiceService.ResetPassword(UserId).subscribe((data) => {
+    });
+  }
 }
