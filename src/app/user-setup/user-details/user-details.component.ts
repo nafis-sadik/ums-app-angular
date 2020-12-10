@@ -23,6 +23,9 @@ export class UserDetailsComponent implements OnInit {
    this.userSetupServiceService.getUser(this.UserId).subscribe((data) => {
       console.log(data.name);
       this._user.Name=data.name;
+      this._user.Cellno=data.cellno;
+      this._user.Email=data.email;
+      this._user.Dob=data.dob;
     });;
   }
 }

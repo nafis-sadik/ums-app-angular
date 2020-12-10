@@ -93,7 +93,7 @@ addNewUser(addUser): Observable<any>{
   }
   ResetPassword(UserId): Observable<any> {
      return this.http
-       .post(`https://localhost:44337/api/Users/ResetPassword/UserId`, {
+       .post(`https://localhost:44337/api/Users/ResetPassword/${UserId}`, {
          headers: this.Headaer,
        })
        .pipe(
