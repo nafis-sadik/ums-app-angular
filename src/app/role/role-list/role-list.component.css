@@ -1,0 +1,11 @@
+#Container {
+    margin-bottom: 15vh;
+  }
+  
+  .table .thead-dark th {
+    background-color: var(--default-black);
+  }
+  
+  .page-link:hover {
+    cursor: pointer;
+  }

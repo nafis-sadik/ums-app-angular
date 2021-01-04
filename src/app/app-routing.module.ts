@@ -1,3 +1,4 @@
+
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -11,6 +12,22 @@ const routes: Routes = [
         (m) => m.UserSetupModule
       ),
   },
+
+  {
+    path: 'Role',
+    loadChildren: () =>
+      import('../app/role/role.module').then(
+        (m) => m.RoleModule
+      ),
+  },
+  {
+    path: 'RoleFeature',
+    loadChildren: () =>
+      import('../app/role-feature/role-feature.module').then(
+        (m) => m.RoleFeatureModule
+      ),
+  },
+  
   // {
   //   path: 'Home',
   //   loadChildren: () =>

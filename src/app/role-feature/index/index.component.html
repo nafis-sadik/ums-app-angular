@@ -1,0 +1,65 @@
+<div class="container" id="Container">
+    <app-secondary-nav [PageHeading]="PageName"></app-secondary-nav>
+    <app-search></app-search>
+
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">SL</th>
+          <th scope="col">Role Name</th>
+          <th scope="col">App Name</th>
+          <th scope="col">Module Name</th>
+          <th scope="col">Feature Name</th>
+          <th scope="col">Create</th>
+          <th scope="col">Edit</th>
+          <th scope="col">View</th>
+          <th scope="col">Authorization</th>
+          <th scope="col">Cancellation</th>
+          <th scope="col">Status</th>
+          <th class="EditOrUpdateBlock" scope="col">Edit / Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of rolefeature; let i = index">
+          <td scope="row">{{ i+1 }}</td>
+          <td>{{item.role.roleName}}</td>
+          <td>{{item.app.name}}</td>
+          <td>{{item.module.name}}</td> 
+          <td>{{item.feature.name}}</td> 
+          <td>{{item.createYN =='Y'?'Yes':'No'}}</td> 
+          <td>{{item.editYN=='Y'?'Yes':'No'}}</td> 
+          <td>{{item.viewDetailYN=='Y'?'Yes':'No'}}</td> 
+          <td>{{item.authYN=='Y'?'Yes':'No'}}</td> 
+          <td>{{item.cancelYN=='Y'?'Yes':'No'}}</td> 
+          <td>{{item.roleDetailStatus=='A'?'Authorized':'Pending'}}</td> 
+          <td class="EditOrUpdateBlock">
+            <a routerLink=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i
+            ></a>
+            <a routerLink="/RoleFeature/FeatureDetail/{{item.roleDtlId}}"><i class="fa fa-sticky-note" aria-hidden="true"></i></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item" (click)="LoadData(1)">
+          <div class="page-link">1</div>
+        </li>
+        <li class="page-item active" (click)="LoadData(2)">
+          <div class="page-link">2</div>
+        </li>
+        <li class="page-item" (click)="LoadData(3)">
+          <div class="page-link">3</div>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+  

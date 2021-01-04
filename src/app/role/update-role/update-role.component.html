@@ -1,0 +1,49 @@
+<div class="container">
+    <app-secondary-nav [PageHeading]="PageName"></app-secondary-nav>
+    <form #updateRole='ngForm' (ngSubmit)="UpdateRole(updateRole.value)">
+      <label for="roleId"
+        >RoleId : {{role.roleId}}</label
+      >
+      <br />
+      <label for="Name">Role Name</label>
+      <input
+        type="hidden"
+        class="form-control"
+        id="userId"
+        name="userId"
+        required
+        [(ngModel)]="UserId"
+      />
+      <input
+        type="hidden"
+        class="form-control"
+        id="roleId"
+        name="roleId"
+        required
+        [(ngModel)]="role.roleId"
+      />
+      <input
+        type="text"
+        class="form-control"
+        id="rolename"
+        name="rolename"
+        required
+        [(ngModel)]="role.rolename"
+      value="{{ role.rolename }}"
+      />
+      <label for="Name">Purpose</label>
+      <input
+        type="text"
+        class="form-control"
+        id="purpose"
+        name="purpose"
+        required
+        [(ngModel)]="role.purpose"
+      value="{{ role.purpose }}"
+      />
+      <button type="submit" class="btn btn-primary">
+        Update Role
+      </button>
+    </form>
+  </div>
+  

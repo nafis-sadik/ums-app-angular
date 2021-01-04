@@ -20,6 +20,11 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     AddUserComponent,
     UserDetailsComponent,
   ],
-  imports: [CommonModule, UserSetupRoutingModule, SharedModule,FormsModule,ReactiveFormsModule],
+  imports: [
+     CommonModule, 
+     UserSetupRoutingModule,
+     SharedModule,
+     FormsModule,
+     ReactiveFormsModule],
 })
 export class UserSetupModule {}

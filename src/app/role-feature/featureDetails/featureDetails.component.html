@@ -1,0 +1,49 @@
+<div class="container" id="Container">
+  <app-secondary-nav [PageHeading]="PageName"></app-secondary-nav>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Assigned Feature details</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>App Name</th>
+        <td> {{RoleDetailInfo.app?.name}} </td>
+      </tr>
+      <tr>
+        <th>Module Name</th>
+        <td> {{RoleDetailInfo.module?.name}} </td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td> {{RoleDetailInfo.feature?.name}} </td>
+      </tr>
+      <tr>
+        <th>Create Y/N</th>
+        <td>{{RoleDetailInfo.createYN=='Y'?'Yes':'No'}}</td>
+      </tr>
+      <tr>
+        <th>Edit Y/N</th>
+        <td>{{RoleDetailInfo.editYN=='Y'?'Yes':'No'}}</td>
+      </tr>
+      <tr>
+        <th>View Detail Y/N</th>
+        <td>{{RoleDetailInfo.viewDetailYN=='Y'?'Yes':'No'}}</td>
+      </tr>
+      <tr>
+        <th>Authorization Y/N</th>
+        <td>{{RoleDetailInfo.authYN=='Y'?'Yes':'No'}}</td>
+      </tr>
+      <tr>
+        <th>Cancel Y/N</th>
+        <td>{{RoleDetailInfo.cancelYN=='Y'?'Yes':'No'}}</td>
+      </tr>
+      <tr>
+        <th>Status</th>
+        <td>{{RoleDetailInfo.roleDetailStatus=='A'?'Authorized':'Pending'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
