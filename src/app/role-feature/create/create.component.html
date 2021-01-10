@@ -1,73 +1,86 @@
 <div class="container" id="Container">
   <app-secondary-nav [PageHeading]="PageName"></app-secondary-nav>
-  <form>
+  <form #addRoleFeature='ngForm' (ngSubmit)="AddRoleFeature(addRoleFeature.value)">
     <br />
+    
+    <input
+      type="hidden"
+      class="form-control"
+      id="userId"
+      name="userId"
+      required
+      [(ngModel)]="UserId"
+      />
+
     <div class="form-group row">
-      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Role</label>
       <div class="col-sm-6">
-        <select class="form-control">
-          <option>Default select</option>
+        <select class="form-control" required id="roleId" name="roleId" ngModel required>
+          <option value="" disabled selected>Select Role</option>
+          <option *ngFor="let item of roleList" [value]="item.roleId">{{item.rolename}}</option>
         </select>
       </div>
     </div>
     <div class="form-group row">
-      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Application</label>
       <div class="col-sm-6">
-        <select class="form-control">
-          <option>Default select</option>
+        <select class="form-control" (change)="selectedApp($event.target.value)" required id="appId" name="appId" ngModel>
+          <option value="" disabled selected>Select Application</option>
+          <option *ngFor="let item of appList" [value]="item.appId">{{item.name}}</option>
         </select>
       </div>
     </div>
     <div class="form-group row">
-      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Module</label>
       <div class="col-sm-6">
-        <select class="form-control">
-          <option>Default select</option>
+        <select class="form-control" (change)="selectModule($event.target.value)" name="moduleId" id="moduleId" ngModel>
+          <option value="" disabled selected>Select Module</option>
+          <option *ngFor="let item of appModuleList" [value]="item.moduleId">{{item.name}}</option>
         </select>
       </div>
     </div>
     <div class="form-group row">
-      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Feature</label>
       <div class="col-sm-6">
-        <select class="form-control">
-          <option>Default select</option>
+        <select class="form-control" id="featureId" required name="featureId" ngModel>
+          <option value="" selected>Select Feature</option>
+          <option *ngFor="let item of featureList" [value]="item.featureId">{{item.name}}</option>
         </select>
       </div>
     </div>
    
-    <div class="form-check form-check-inline ">
-      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="createYN" ngModel name="createYN">
       <label class="form-check-label" for="defaultCheck1">
         Create (c)
       </label>
     </div>
+
     <div class="form-check form-check-inline">
-      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <input class="form-check-input" type="checkbox" id="editYN" ngModel name="editYN" value="asdasdasd">
       <label class="form-check-label" for="defaultCheck1">
         Edit (e)
       </label>
     </div>
-
   <div class="form-check form-check-inline">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <input class="form-check-input" type="checkbox" id="viewDetailYN" ngModel name="viewDetailYN">
     <label class="form-check-label" for="defaultCheck1">
       View Detail
     </label>
   </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <input class="form-check-input" type="checkbox" id="authYN" ngModel name="authYN">
   <label class="form-check-label" for="defaultCheck1">
     Authorization (a)
   </label>
 </div>
 <div class="form-check form-check-inline">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <input class="form-check-input" type="checkbox" id="cancelYN" ngModel name="cancelYN">
   <label class="form-check-label" for="defaultCheck1">
     Cancellation (c)
   </label>
 </div>
-
-
+ 
 <button type="submit" class="btn btn-primary">
   Add 
 </button>

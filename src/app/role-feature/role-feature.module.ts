@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { IndexComponent } from './index/index.component';
 import { FeatureDetailsComponent } from './featureDetails/featureDetails.component';
 import { CreateComponent } from './create/create.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { CreateComponent } from './create/create.component';
   imports: [
     CommonModule,
     SharedModule,
+    FormsModule,
     RoleFeatureRoutingModule
   ]
 })
