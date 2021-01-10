@@ -12,17 +12,6 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
   route(){
-    if (this.router.url.split('/')[1] === 'User'){
-      console.log("kaj hoice");
-      this.router.navigate(['/User/AddNewUser'])
-    }
-    if (this.router.url.split('/')[1] === 'Role'){
-      console.log("kaj hoice");
-      this.router.navigate(['/Role/AddNewRole'])
-    }
-    if (this.router.url.split('/')[1] === 'RoleFeature'){
-      console.log("kaj hoice");
-      this.router.navigate(['/RoleFeature/Create'])
-    }
+    this.router.navigate([this.router.url.split('/')[1] + '/Create']);
   }
 }

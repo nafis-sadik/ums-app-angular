@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'ResetPassword', component: ResetPasswordComponent },
   { path: 'UpdateUser', component: UpdateUserComponent },
   { path: 'UpdateUser/:UserId', component: UpdateUserComponent },
-  { path: 'AddNewUser', component: AddUserComponent },
+  { path: 'Create', component: AddUserComponent },
   { path: 'UserDetails/:UserId', component: UserDetailsComponent },
 ];
 
